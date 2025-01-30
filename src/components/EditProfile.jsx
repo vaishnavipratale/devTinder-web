@@ -70,7 +70,7 @@ const EditProfile = ({user}) => {
       <span className="label-text">Photo Url</span>
     </div>
     <input type="text"
-           value={photoUrl}
+        value={photoUrl}
      className="input input-bordered w-full max-w-xs"
      onChange={(e)=>setPhotoUrl(e.target.value)} />
   </label>

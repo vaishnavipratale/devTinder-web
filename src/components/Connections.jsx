@@ -7,8 +7,8 @@ import { BASE_URL } from "../utils/constants";
 const Connections = () => {
     const connections = useSelector((store) => store.connections);
     const dispatch = useDispatch();
- const fetchConnections = async ()=>{
-try {  
+const fetchConnections = async ()=>{
+try {
     const res= await axios.get(BASE_URL + "/user/connections", {
         withCredentials: true,
         });
@@ -29,7 +29,7 @@ useEffect(() => {
 
   return (
     <div className="text-center my-10">
-      <h1 className="text-bold text-white text-3xl">Connections</h1>
+      <h1 className="text-bold text-black text-3xl">Connections</h1>
 
       {connections.map((connection) => {
         const { _id, firstName, lastName, photoUrl, age, gender, about } =
