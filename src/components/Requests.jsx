@@ -53,7 +53,7 @@ const Requests = () => {
           <div
           key={_id} // Use the correct unique identifier
 
-            className=" flex m-4 p-4 rounded-lg bg-base-300 w-1/2 mx-auto"
+            className=" flex m-4 p-4 rounded-lg bg-base-300 w-2/3 mx-auto"
           >
             <div>
               <img
