@@ -17,10 +17,11 @@ const Body = () => {
     try {
       const res = await axios.get(BASE_URL + "/profile/view", {
         withCredentials: true,
+       
       });
       dispatch(addUser(res.data));
     } catch (err) {
-      if (err.status === 401) {
+      if(err.status === 401) {
         navigate("/login");
       }
       console.error(err);
@@ -28,7 +29,7 @@ const Body = () => {
   };
 
   useEffect(() => {
-    fetchUser();
+      fetchUser();
   }, []);
 
   return (
@@ -42,5 +43,20 @@ const Body = () => {
 
 
 export default Body;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
