@@ -1,6 +1,7 @@
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Body from "./components/Body";
+import Chat from "./components/Chat";
 import Connections from "./components/Connections";
 import Feed from "./components/Feed";
 import Footer from "./components/Footer";
@@ -21,6 +22,7 @@ function App() {
             <Route path="/connections" element={<Connections />}/>
             <Route path="/requests" element={<Requests />}/>
             <Route path="/footer" element={<Footer />}/>
+            <Route path="/chat/:targetUserId" element={<Chat />}/>
             </Route>
           </Routes>
         </BrowserRouter>
